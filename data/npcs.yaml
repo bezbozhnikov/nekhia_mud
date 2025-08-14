@@ -1,0 +1,26 @@
+---
+tegyrios:
+  name: Tegyrios
+  room: tegyrios_hut
+  greet: |
+    "Ah, it's you, my friend. You're never a disturbance. Come in, come in."
+    Tegyrios studies you with warm eyes. "The talisman you spoke of… did you find it?"
+  quest_start: |
+    "Be wary. The Forgotten Acacia bears old sigils. Search there under the moon."
+  quest_turnin: |
+    Tegyrios turns the talisman in his hands, troubled. "This is no child's trinket."
+    "Nehemog's whispers travel on such wings. We must be vigilant."
+
+innkeeper:
+  name: Innkeeper
+  room: azethria_inn
+  greet: |
+    "Welcome to the Ink & Breeze! Warm tea, warmer company. Have a look at the shelf."
+
+nihorath:
+  name: Nihorath the Just
+  room: azethria_temple
+  greet: |
+    Nihorath bows slightly. "May balance steady your steps. Azethria stands with those who seek the truth."
+  hint: |
+    "Darkness gathers where the forest drinks poison. Help the hunters reclaim their ground."

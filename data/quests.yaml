@@ -1,0 +1,12 @@
+---
+intro_cult_talisman:
+  name: Shadows at the Acacia
+  start_npc: Tegyrios
+  goal: Find the Cult Talisman at the Forgotten Acacia and return it to Tegyrios.
+  reward: {xp: 50, items: []}
+
+hunt_in_the_woods:
+  name: Clearing the Woods
+  start_npc: Nihorath the Just
+  goal: Slay a Moonwolf and return with the tale to the Temple of Azethra.
+  reward: {xp: 40, items: []}

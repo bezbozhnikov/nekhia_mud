@@ -1,0 +1,38 @@
+{
+  "name": "host1",
+  "race": "Vorkhun",
+  "cls": "Barbarian Bloodberserk",
+  "deity": "Azethra",
+  "room": "trade_district",
+  "hp": 100,
+  "max_hp": 120,
+  "power": 20,
+  "defense": 1,
+  "shield": 0,
+  "level": 1,
+  "xp": 0,
+  "inventory": [],
+  "cooldowns": {},
+  "flags": {
+    "created": true,
+    "az_used": false
+  },
+  "quest": {
+    "id": "intro_cult_talisman",
+    "stage": 0
+  },
+  "equipment": {
+    "weapon": null,
+    "set": null,
+    "shield": null
+  },
+  "stats": {
+    "STR": 15,
+    "INT": 10,
+    "DEX": 12,
+    "DEF": 7,
+    "LCK": 10
+  },
+  "obols": 0,
+  "archetype": "Warrior"
+}

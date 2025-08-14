@@ -1,0 +1,15 @@
+Azethra:
+  passive: {type: heal_boost, amount: 0.20}
+  active: {id: az_bless, name: Blessing of Azethra, type: resurrect, cd: 999}
+Zarkhothun:
+  passive: {type: shield_on_hit, perc: 0.15, reflect: 0.05}
+  active: {id: zk_prov, name: Zarkhothun's Providence, type: shield, amount: 75, cd: 60}
+Kav'Arcthul:
+  passive: {type: balance, damage: 0.10, heal: 0.10}
+  active: {id: ka_protect, name: Protection of Kav'Arcthul, type: lifesteal, amount: 50, cd: 45}
+Qty'Sulhu:
+  passive: {type: dot_returns_heal, perc: 0.10}
+  active: {id: qs_malediction, name: Blasphemous Malediction, type: dot, per_tick: 10, duration: 10, cd: 45}
+Zisaroq'Astuul:
+  passive: {type: damage_boost, amount: 0.20}
+  active: {id: za_retaliation, name: Profane Retaliation, type: damage, amount: 100, cd: 90}

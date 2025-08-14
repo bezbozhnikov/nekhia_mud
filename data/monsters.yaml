@@ -1,0 +1,358 @@
+---
+templates:
+
+  # ===== T1–T2 Forest / Hills =====
+  moonwolf:
+    name: Moonwolf
+    hp: 70
+    power: 8
+    defense: 1
+    aggro: true
+    respawn: 30
+    loot:
+      - { item: Wolf Pelt, chance: 55 }
+    skills:
+      - { name: Raking Claws, type: damage, amount: 6, cd: 4 }
+      - { name: Howl of Rot, type: dot, per_tick: 3, duration: 6, cd: 8 }
+
+  poisonbat:
+    name: Poisonbat
+    hp: 45
+    power: 7
+    defense: 0
+    aggro: true
+    respawn: 25
+    loot:
+      - { item: Poison Gland, chance: 50 }
+    skills:
+      - { name: Venom Spit, type: dot, per_tick: 2, duration: 8, cd: 6 }
+      - { name: Wing Buffet, type: damage, amount: 4, cd: 5 }
+
+  wyldling:
+    name: Wyldling
+    hp: 90
+    power: 10
+    defense: 2
+    aggro: true
+    respawn: 35
+    skills:
+      - { name: Briar Lash, type: damage, amount: 7, cd: 5 }
+
+  wolfbear:
+    name: Wolfbear
+    hp: 120
+    power: 12
+    defense: 3
+    aggro: true
+    respawn: 40
+    loot:
+      - { item: Wolf Pelt, chance: 45 }
+    skills:
+      - { name: Maul, type: damage, amount: 10, cd: 6 }
+      - { name: Rend, type: dot, per_tick: 4, duration: 6, cd: 8 }
+
+  bloodboar:
+    name: Bloodboar
+    hp: 95
+    power: 11
+    defense: 1
+    aggro: true
+    respawn: 35
+    skills:
+      - { name: Gore, type: damage, amount: 8, cd: 5 }
+      - { name: Frenzy, type: buff, mod: { power: 3 }, duration: 6, cd: 12 }
+
+  wild_dog:
+    name: Wild Dog
+    hp: 55
+    power: 6
+    defense: 0
+    aggro: false
+    respawn: 25
+    loot:
+      - { item: Wolf Pelt, chance: 20 }
+    skills:
+      - { name: Bite, type: damage, amount: 4, cd: 5 }
+
+  wild_rabbit:
+    name: Wild Rabbit
+    hp: 25
+    power: 2
+    defense: 0
+    aggro: false
+    respawn: 15
+    skills: []
+
+  black_fox:
+    name: Black Fox
+    hp: 40
+    power: 5
+    defense: 0
+    aggro: false
+    respawn: 20
+    loot:
+      - { item: Wolf Pelt, chance: 15 }
+    skills:
+      - { name: Nip, type: damage, amount: 3, cd: 4 }
+
+  wild_bird:
+    name: Wild Bird
+    hp: 30
+    power: 3
+    defense: 0
+    aggro: false
+    respawn: 20
+    skills:
+      - { name: Peck, type: damage, amount: 2, cd: 4 }
+
+  deer:
+    name: Deer
+    hp: 60
+    power: 3
+    defense: 0
+    aggro: false
+    respawn: 25
+    skills: []
+
+  boar:
+    name: Boar
+    hp: 70
+    power: 7
+    defense: 1
+    aggro: false
+    respawn: 25
+    skills:
+      - { name: Tusk Jab, type: damage, amount: 5, cd: 5 }
+
+  # ===== Water / Ooze =====
+  aqualisk:
+    name: Aqualisk
+    hp: 80
+    power: 9
+    defense: 2
+    aggro: true
+    respawn: 35
+    skills:
+      - { name: Drown Pull, type: damage, amount: 8, cd: 6 }
+      - { name: Brine Burn, type: dot, per_tick: 3, duration: 6, cd: 8 }
+
+  nageel:
+    name: Nageel
+    hp: 60
+    power: 10
+    defense: 0
+    aggro: true
+    respawn: 30
+    skills:
+      - { name: Shock, type: damage, amount: 9, cd: 6 }
+
+  sirenum:
+    name: Sirenum
+    hp: 85
+    power: 10
+    defense: 1
+    aggro: true
+    respawn: 35
+    skills:
+      - { name: Luring Hymn, type: damage, amount: 7, cd: 7 }
+      - { name: Riptide Kiss, type: dot, per_tick: 3, duration: 6, cd: 9 }
+
+  nictilucent:
+    name: Nictilucent
+    hp: 100
+    power: 8
+    defense: 2
+    aggro: true
+    respawn: 40
+    skills:
+      - { name: Caustic Slough, type: dot, per_tick: 4, duration: 8, cd: 8 }
+      - { name: Ooze Mend, type: hot, per_tick: 4, duration: 6, cd: 12 }
+
+  # ===== Night / Horror =====
+  nyktarian:
+    name: Nyktarian
+    hp: 90
+    power: 11
+    defense: 2
+    aggro: true
+    respawn: 35
+    skills:
+      - { name: Echo Screech, type: damage, amount: 9, cd: 6 }
+      - { name: Midnight Rake, type: dot, per_tick: 3, duration: 6, cd: 8 }
+
+  nocturne:
+    name: Nocturne
+    hp: 100
+    power: 12
+    defense: 3
+    aggro: true
+    respawn: 40
+    skills:
+      - { name: Talon Crush, type: damage, amount: 10, cd: 6 }
+      - { name: Bone Chill, type: dot, per_tick: 4, duration: 6, cd: 9 }
+
+  # ===== Caverns / Mountains =====
+  giant_spider:
+    name: Giant Spider
+    hp: 80
+    power: 9
+    defense: 1
+    aggro: true
+    respawn: 30
+    loot:
+      - { item: Poison Gland, chance: 30 }
+    skills:
+      - { name: Venom Bite, type: dot, per_tick: 3, duration: 8, cd: 7 }
+
+  venomweaver:
+    name: Venomweaver
+    hp: 110
+    power: 12
+    defense: 2
+    aggro: true
+    respawn: 40
+    loot:
+      - { item: Poison Gland, chance: 45 }
+    skills:
+      - { name: Toxic Spray, type: dot, per_tick: 4, duration: 8, cd: 8 }
+      - { name: Chitin Lunge, type: damage, amount: 9, cd: 6 }
+
+  chiropteran:
+    name: Chiropteran
+    hp: 85
+    power: 10
+    defense: 1
+    aggro: true
+    respawn: 35
+    skills:
+      - { name: Razor Swoop, type: damage, amount: 8, cd: 5 }
+
+  venomwyrm:
+    name: Venomwyrm
+    hp: 120
+    power: 14
+    defense: 2
+    aggro: true
+    respawn: 45
+    loot:
+      - { item: Poison Gland, chance: 50 }
+    skills:
+      - { name: Venom Jet, type: dot, per_tick: 5, duration: 8, cd: 8 }
+      - { name: Tail Scythe, type: damage, amount: 11, cd: 6 }
+
+  pteranodax:
+    name: Pteranodax
+    hp: 100
+    power: 12
+    defense: 2
+    aggro: true
+    respawn: 40
+    skills:
+      - { name: Dive, type: damage, amount: 10, cd: 6 }
+
+  ogthar:
+    name: Og'Thar
+    hp: 160
+    power: 16
+    defense: 4
+    aggro: true
+    respawn: 50
+    skills:
+      - { name: Club Smash, type: damage, amount: 14, cd: 7 }
+      - { name: Bellow, type: buff, mod: { power: 4 }, duration: 6, cd: 12 }
+
+  gor_khun:
+    name: Gor'Khun Raider
+    hp: 120
+    power: 13
+    defense: 3
+    aggro: true
+    respawn: 45
+    skills:
+      - { name: Cleave, type: damage, amount: 10, cd: 6 }
+
+  # ===== Sentient (varied hostility) =====
+  solinthar:
+    name: Solinthar Ranger
+    hp: 110
+    power: 11
+    defense: 3
+    aggro: false
+    respawn: 45
+    skills:
+      - { name: Thicket Step, type: hot, per_tick: 3, duration: 6, cd: 12 }
+
+  etherid:
+    name: Etherid
+    hp: 120
+    power: 10
+    defense: 5
+    aggro: false
+    respawn: 45
+    skills:
+      - { name: Radiant Pulse, type: damage, amount: 9, cd: 6 }
+
+  shadowkin:
+    name: Shadowkin
+    hp: 130
+    power: 14
+    defense: 3
+    aggro: true
+    respawn: 50
+    skills:
+      - { name: Umbral Cut, type: damage, amount: 12, cd: 6 }
+      - { name: Bleak Miasma, type: dot, per_tick: 5, duration: 8, cd: 9 }
+
+  netherling:
+    name: Netherling
+    hp: 140
+    power: 15
+    defense: 4
+    aggro: true
+    respawn: 55
+    skills:
+      - { name: Rift Lash, type: damage, amount: 13, cd: 6 }
+
+  arcanite:
+    name: Arcanite
+    hp: 120
+    power: 16
+    defense: 2
+    aggro: true
+    respawn: 55
+    skills:
+      - { name: Arc Ray, type: damage, amount: 14, cd: 7 }
+
+  voidborn:
+    name: Voidborn
+    hp: 150
+    power: 16
+    defense: 5
+    aggro: true
+    respawn: 60
+    skills:
+      - { name: Null Surge, type: damage, amount: 15, cd: 8 }
+      - { name: Entropy Rot, type: dot, per_tick: 6, duration: 8, cd: 10 }
+
+  nyarleth:
+    name: Nyarleth
+    hp: 200
+    power: 20
+    defense: 6
+    aggro: true
+    respawn: 80
+    skills:
+      - { name: Mind Lance, type: damage, amount: 18, cd: 7 }
+      - { name: Siren Dread, type: dot, per_tick: 7, duration: 8, cd: 10 }
+
+  # ===== Apex =====
+  blooddragon:
+    name: Blooddragon
+    hp: 260
+    power: 24
+    defense: 8
+    aggro: true
+    respawn: 120
+    skills:
+      - { name: Bloodflame Breath, type: damage, amount: 22, cd: 8 }
+      - { name: Burning Hemorrhage, type: dot, per_tick: 8, duration: 8, cd: 12 }

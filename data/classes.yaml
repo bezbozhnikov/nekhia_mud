@@ -1,0 +1,103 @@
+by_race:
+  Vorkhun: [Barbarian Bloodberserk, Bloodhexer, Bloodmender, Bloodstalker]
+  Hraventhi: [Warrior, Mage, Healer, Rogue]
+  Zalgorith: [Lithoshield, Firecaller, Geowarden]
+  Nymph: [Zephyrbolt, Aeromancer, Cloudhealer, Whisperleaf]
+  Dryad: [Thornblade, Chloromancer, Grovemender, Shadowgrove]
+  Nereid: [Torrentblade, Aquamancer, Riverseer, Streamthief]
+  Akhuzgal: [Fighter, Lifesage, Ironcloak]
+  Zathyrkhon: [Hornblade, Fernmystic, Venomheart]
+
+mods:
+  Warrior: {hp: 10, power: 2}
+  Mage: {hp: -5, power: 4}
+  Healer: {hp: 0, power: 1}
+  Rogue: {hp: -5, power: 3}
+  Barbarian Bloodberserk: {hp: 10, power: 3}
+  Bloodhexer: {hp: -5, power: 4}
+  Bloodmender: {hp: 0, power: 1}
+  Bloodstalker: {hp: -5, power: 3}
+  Lithoshield: {hp: 20, power: 1}
+  Firecaller: {hp: -5, power: 4}
+  Geowarden: {hp: 0, power: 1}
+  Zephyrbolt: {hp: -5, power: 3}
+  Aeromancer: {hp: -5, power: 4}
+  Cloudhealer: {hp: 0, power: 1}
+  Whisperleaf: {hp: -5, power: 3}
+  Thornblade: {hp: -2, power: 3}
+  Chloromancer: {hp: -5, power: 4}
+  Grovemender: {hp: 0, power: 1}
+  Shadowgrove: {hp: -5, power: 3}
+  Torrentblade: {hp: 0, power: 2}
+  Aquamancer: {hp: -5, power: 4}
+  Riverseer: {hp: 0, power: 1}
+  Streamthief: {hp: -5, power: 3}
+  Fighter: {hp: 10, power: 2}
+  Lifesage: {hp: 0, power: 1}
+  Ironcloak: {hp: -5, power: 3}
+  Hornblade: {hp: 5, power: 3}
+  Fernmystic: {hp: -5, power: 4}
+  Venomheart: {hp: -5, power: 3}
+
+abilities:
+  Warrior:
+    - {id: strike, name: Strike, type: damage, amount: 10, cd: 5}
+    - {id: wrath, name: Wrath, type: buff, amount: 10, duration: 10, cd: 20}
+  Mage:
+    - {id: flames, name: Flames, type: dot, per_tick: 10, duration: 5, cd: 10}
+    - {id: frost, name: Frost, type: lifesteal, amount: 15, cd: 12}
+    - {id: incantation, name: Incantation, type: buff, amount: 5, duration: 20, cd: 30}
+  Healer:
+    - {id: cure, name: Cure, type: hot, per_tick: 10, duration: 5, cd: 10, target: self}
+    - {id: alleviate, name: Alleviate Pain, type: heal, amount: 20, cd: 10}
+  Rogue:
+    - {id: noxious, name: Noxious Veil, type: dot, per_tick: 10, duration: 5, cd: 12}
+    - {id: plaguebearer, name: Plaguebearer, type: dot, per_tick: 10, duration: 10, cd: 30}
+
+  Barbarian Bloodberserk:
+    - {id: gore, name: Gore, type: damage, amount: 10, cd: 5}
+    - {id: haematic, name: Haematic Ecstasy, type: buff, amount: 10, duration: 10, cd: 20}
+  Bloodhexer:
+    - {id: circulatory_hex, name: Circulatory Hex, type: dot, per_tick: 10, duration: 5, cd: 12}
+    - {id: hemoglyph, name: Hemoglyph, type: buff, amount: 5, duration: 20, cd: 40}
+  Bloodmender:
+    - {id: hemotherapy, name: Hemotherapy, type: hot, per_tick: 10, duration: 5, cd: 10}
+  Bloodstalker:
+    - {id: blood_contaminant, name: Blood Contaminant, type: dot, per_tick: 10, duration: 5, cd: 12}
+
+  Lithoshield:
+    - {id: bulwark, name: Stone Bulwark, type: shield, amount: 30, cd: 20}
+  Firecaller:
+    - {id: lava, name: Lava Burst, type: dot, per_tick: 12, duration: 5, cd: 12}
+  Geowarden:
+    - {id: water_mend, name: Water Mend, type: hot, per_tick: 8, duration: 6, cd: 12}
+archetype:
+  Warrior: Warrior
+  Mage: Mage
+  Healer: Healer
+  Rogue: Rogue
+  Barbarian Bloodberserk: Warrior
+  Bloodhexer: Mage
+  Bloodmender: Healer
+  Bloodstalker: Rogue
+  Lithoshield: Warrior
+  Firecaller: Mage
+  Geowarden: Healer
+  Zephyrbolt: Rogue
+  Aeromancer: Mage
+  Cloudhealer: Healer
+  Whisperleaf: Rogue
+  Thornblade: Warrior
+  Chloromancer: Mage
+  Grovemender: Healer
+  Shadowgrove: Rogue
+  Torrentblade: Warrior
+  Aquamancer: Mage
+  Riverseer: Healer
+  Streamthief: Rogue
+  Fighter: Warrior
+  Lifesage: Healer
+  Ironcloak: Rogue
+  Hornblade: Warrior
+  Fernmystic: Mage
+  Venomheart: Rogue

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nekhia (Web MUD)</title>
+  <style>
+    body { background:#0e0f14; color:#e6e6e6; font:14px/1.4 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; margin:0; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 16px; }
+    #log { background:#0b0c10; border:1px solid #20222b; border-radius:8px; min-height:60vh; padding:12px; white-space:pre-wrap; overflow:auto; }
+    #bar { display:flex; gap:8px; margin-top:10px; }
+    #input { flex:1; padding:10px; border-radius:6px; border:1px solid #2c2f3a; background:#131521; color:#e6e6e6; }
+    button { padding:10px 14px; border-radius:6px; border:1px solid #2c2f3a; background:#1a1d2b; color:#e6e6e6; cursor:pointer; }
+    button:hover { background:#22263a; }
+    .hint { color:#9aa0aa; font-size:12px; margin-top:6px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h2>Nekhia (Web MUD)</h2>
+  <div id="log"></div>
+  <div id="bar">
+    <input id="input" placeholder="type a command (try: help)" autofocus />
+    <button id="send">Send</button>
+  </div>
+  <div class="hint">Shortcuts: Enter to send. Commands: <code>help</code>, <code>look</code>, <code>go east</code>, <code>talk tegyrios</code>, <code>search</code>, <code>attack moonwolf</code>.</div>
+</div>
+<script>
+  const log = document.getElementById('log');
+  const input = document.getElementById('input');
+  const btn = document.getElementById('send');
+
+  function append(text){
+    log.textContent += text;
+    log.scrollTop = log.scrollHeight;
+  }
+
+  const proto = (location.protocol === 'https:') ? 'wss' : 'ws';
+  const ws = new WebSocket(`${proto}://${location.host}/ws`);
+  ws.onopen = () => append("(connected)\n");
+  ws.onmessage = (ev) => append(ev.data);
+  ws.onclose = () => append("\n(disconnected)\n");
+
+  function send(){
+    const v = input.value.trim();
+    if(!v) return;
+    ws.send(v);
+    input.value='';
+  }
+  btn.onclick = send;
+  input.addEventListener('keydown', e=>{ if(e.key==='Enter'){ send(); } });
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "tester1",
+  "race": "Vorkhun",
+  "cls": "Barbarian Bloodberserk",
+  "deity": "Zisaroq'Astuul",
+  "room": "nefo_akhal",
+  "hp": 120,
+  "max_hp": 120,
+  "power": 15,
+  "defense": 0,
+  "shield": 0,
+  "level": 1,
+  "xp": 40,
+  "inventory": [
+    "Wolf Pelt",
+    "Bat Wing",
+    "Wolf Pelt"
+  ],
+  "cooldowns": {},
+  "flags": {
+    "created": true,
+    "az_used": false
+  },
+  "quest": {
+    "id": "intro_cult_talisman",
+    "stage": 0
+  },
+  "obol": 19,
+  "salt": "4603e199b9aea133e5ca3ce267664d68",
+  "passhash": "38bfd632658f69ddcc519916fb83117700668c394a6d8503623b2956df70e647"
+}

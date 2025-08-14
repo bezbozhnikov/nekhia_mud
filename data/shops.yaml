@@ -1,0 +1,28 @@
+---
+shops:
+  az_inn:
+    name: Ink & Breeze Inn Shop
+    room: trade_district
+    inventory:
+      Sword T1:
+        price: 8
+      Longsword T1:
+        price: 10
+      Axe T1:
+        price: 10
+      Spear T1:
+        price: 10
+      Bow T1:
+        price: 10
+      Wand T1:
+        price: 10
+      Staff T1:
+        price: 12
+      Shield T1:
+        price: 12
+      Robe Set T1:
+        price: 15
+      Leather Set T1:
+        price: 16
+      Mail Set T1:
+        price: 18

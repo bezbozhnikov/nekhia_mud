@@ -1,0 +1,389 @@
+---
+# Loot / Materials (existing)
+Wolf Pelt:
+  type: material
+  desc: A thick pelt from a Moonwolf.
+  vendor_value: 4
+
+Poison Gland:
+  type: material
+  desc: A bulb of caustic venom.
+  vendor_value: 5
+
+Cult Talisman:
+  type: quest
+  desc: A strange talisman with two red eyes on two wings.
+  vendor_value: 0
+
+# Weapons (Tiers 1-5)
+Sword T1:
+  type: weapon
+  desc: A basic iron sword.
+  mods: { power: 2 }
+  value: 8
+Sword T2: { type: weapon, desc: Tempered sword, mods: { power: 4 }, value: 16 }
+Sword T3: { type: weapon, desc: Fine steel sword, mods: { power: 6 }, value: 28 }
+Sword T4: { type: weapon, desc: Masterwork sword, mods: { power: 9 }, value: 44 }
+Sword T5: { type: weapon, desc: Mythic blade, mods: { power: 13 }, value: 66 }
+
+Longsword T1: { type: weapon, desc: Longer reach, mods: { power: 3 }, value: 10 }
+Longsword T2: { type: weapon, desc: Forged for knights, mods: { power: 5 }, value: 18 }
+Longsword T3: { type: weapon, desc: Balanced steel, mods: { power: 7 }, value: 30 }
+Longsword T4: { type: weapon, desc: Tournament grade, mods: { power: 10 }, value: 46 }
+Longsword T5: { type: weapon, desc: Regal cutter, mods: { power: 14 }, value: 70 }
+
+Axe T1: { type: weapon, desc: Chipped but heavy, mods: { power: 3 }, value: 10 }
+Axe T2: { type: weapon, desc: Reinforced head, mods: { power: 5 }, value: 18 }
+Axe T3: { type: weapon, desc: Double-beveled, mods: { power: 7 }, value: 30 }
+Axe T4: { type: weapon, desc: Blood-grooved, mods: { power: 10 }, value: 46 }
+Axe T5: { type: weapon, desc: War-chief’s edge, mods: { power: 14 }, value: 70 }
+
+Double Axe T1: { type: weapon, desc: Twin blades, mods: { power: 4 }, value: 12 }
+Double Axe T2: { type: weapon, desc: Balanced twins, mods: { power: 6 }, value: 22 }
+Double Axe T3: { type: weapon, desc: Battle-twins, mods: { power: 8 }, value: 34 }
+Double Axe T4: { type: weapon, desc: Carnage twins, mods: { power: 11 }, value: 50 }
+Double Axe T5: { type: weapon, desc: Doom twins, mods: { power: 15 }, value: 74 }
+
+Spear T1: { type: weapon, desc: Simple ash spear, mods: { power: 3 }, value: 10 }
+Spear T2: { type: weapon, desc: Leaf head, mods: { power: 5 }, value: 18 }
+Spear T3: { type: weapon, desc: Barbed head, mods: { power: 7 }, value: 30 }
+Spear T4: { type: weapon, desc: Phalanx spear, mods: { power: 10 }, value: 46 }
+Spear T5: { type: weapon, desc: Dragon tooth, mods: { power: 14 }, value: 70 }
+
+Bow T1: { type: weapon, desc: Yew shortbow, mods: { power: 3 }, value: 10 }
+Bow T2: { type: weapon, desc: Recurve, mods: { power: 5 }, value: 18 }
+Bow T3: { type: weapon, desc: Composite bow, mods: { power: 7 }, value: 30 }
+Bow T4: { type: weapon, desc: Longbow, mods: { power: 10 }, value: 46 }
+Bow T5: { type: weapon, desc: Royal longbow, mods: { power: 14 }, value: 70 }
+
+Wand T1: { type: weapon, desc: Carved twig focus, mods: { power: 3 }, value: 10 }
+Wand T2: { type: weapon, desc: Crystal tip, mods: { power: 5 }, value: 18 }
+Wand T3: { type: weapon, desc: Runed wand, mods: { power: 7 }, value: 30 }
+Wand T4: { type: weapon, desc: Starwood wand, mods: { power: 10 }, value: 46 }
+Wand T5: { type: weapon, desc: Archmage rod, mods: { power: 14 }, value: 70 }
+
+Staff T1: { type: weapon, desc: Oak staff, mods: { power: 2, hp: 5 }, value: 12 }
+Staff T2: { type: weapon, desc: Willow staff, mods: { power: 4, hp: 8 }, value: 20 }
+Staff T3: { type: weapon, desc: Elder staff, mods: { power: 6, hp: 12 }, value: 32 }
+Staff T4: { type: weapon, desc: Moon staff, mods: { power: 9, hp: 16 }, value: 48 }
+Staff T5: { type: weapon, desc: Cosmos staff, mods: { power: 13, hp: 22 }, value: 72 }
+
+Shield T1:
+  type: shield
+  desc: A small buckler.
+  mods: { defense: 2, hp: 4 }
+  value: 12
+Shield T2: { type: shield, desc: Round shield, mods: { defense: 4, hp: 6 }, value: 20 }
+Shield T3: { type: shield, desc: Kite shield, mods: { defense: 6, hp: 10 }, value: 32 }
+Shield T4: { type: shield, desc: Tower shield, mods: { defense: 9, hp: 14 }, value: 48 }
+Shield T5: { type: shield, desc: Bulwark, mods: { defense: 12, hp: 20 }, value: 72 }
+
+# Armor Sets (equips as a single item, no boots/gloves/etc)
+# Robe (mage/healer), Leather (rogue/hunter), Mail (warrior)
+Robe Set T1:
+  type: armor_set
+  desc: Simple woolen robe set.
+  mods: { hp: 6, power: 2, defense: 1 }
+  value: 15
+Robe Set T2: { type: armor_set, desc: Lined robes, mods: { hp: 10, power: 4, defense: 2 }, value: 24 }
+Robe Set T3: { type: armor_set, desc: Runed robes, mods: { hp: 16, power: 6, defense: 3 }, value: 36 }
+Robe Set T4: { type: armor_set, desc: Starweave robes, mods: { hp: 24, power: 9, defense: 4 }, value: 52 }
+Robe Set T5: { type: armor_set, desc: Archon robes, mods: { hp: 34, power: 13, defense: 5 }, value: 78 }
+
+Leather Set T1: { type: armor_set, desc: Tanned leathers, mods: { hp: 8, power: 3, defense: 2 }, value: 16 }
+Leather Set T2: { type: armor_set, desc: Stitched leathers, mods: { hp: 12, power: 5, defense: 3 }, value: 26 }
+Leather Set T3: { type: armor_set, desc: Studded leathers, mods: { hp: 18, power: 7, defense: 4 }, value: 38 }
+Leather Set T4: { type: armor_set, desc: Shadow leathers, mods: { hp: 26, power: 10, defense: 5 }, value: 54 }
+Leather Set T5: { type: armor_set, desc: Night leathers, mods: { hp: 36, power: 14, defense: 6 }, value: 80 }
+
+Mail Set T1: { type: armor_set, desc: Light mail, mods: { hp: 10, power: 2, defense: 3 }, value: 18 }
+Mail Set T2: { type: armor_set, desc: Riveted mail, mods: { hp: 16, power: 4, defense: 5 }, value: 30 }
+Mail Set T3: { type: armor_set, desc: Hardened mail, mods: { hp: 24, power: 6, defense: 7 }, value: 44 }
+Mail Set T4: { type: armor_set, desc: Warlord mail, mods: { hp: 34, power: 9, defense: 10 }, value: 62 }
+Mail Set T5: { type: armor_set, desc: Titan mail, mods: { hp: 46, power: 13, defense: 13 }, value: 86 }
+
+# --- Materials & mob drops (newly added) ---
+Moonwolf Fang:
+  type: material
+  desc: A curved, pale fang from a moonwolf.
+  vendor_value: 6
+
+Bat Wing:
+  type: material
+  desc: A leathery bat wing suitable for tinctures.
+  vendor_value: 5
+
+Venom Sac:
+  type: material
+  desc: A swollen sac of stabilized venom.
+  vendor_value: 9
+
+Deer Meat:
+  type: material
+  desc: Fresh venison, prized by inns.
+  vendor_value: 4
+
+Deer Hide:
+  type: material
+  desc: A supple hide taken from a deer.
+  vendor_value: 7
+
+Boar Meat:
+  type: material
+  desc: Rich boar meat.
+  vendor_value: 5
+
+Boar Hide:
+  type: material
+  desc: A thick boar hide suited for leatherwork.
+  vendor_value: 7
+
+Rabbit Meat:
+  type: material
+  desc: Lean rabbit meat.
+  vendor_value: 3
+
+Soft Fur:
+  type: material
+  desc: Soft fur suitable for trim.
+  vendor_value: 4
+
+Fox Pelt:
+  type: material
+  desc: A sleek black pelt.
+  vendor_value: 8
+
+Fox Meat:
+  type: material
+  desc: Tough, gamy meat.
+  vendor_value: 2
+
+Tough Hide:
+  type: material
+  desc: Weathered hide.
+  vendor_value: 5
+
+Dog Meat:
+  type: material
+  desc: Stringy meat from wild dogs.
+  vendor_value: 2
+
+Spider Silk:
+  type: material
+  desc: Strong and lustrous silk.
+  vendor_value: 10
+
+Spider Venom:
+  type: material
+  desc: Thick venom condensed for alchemy.
+  vendor_value: 9
+
+Fish Meat:
+  type: material
+  desc: Fresh river fish meat.
+  vendor_value: 4
+
+Aqualisk Scale:
+  type: material
+  desc: Blue-green scale that glints underwater.
+  vendor_value: 8
+
+Eel Meat:
+  type: material
+  desc: Oily meat popular in stews.
+  vendor_value: 4
+
+Conductive Slime:
+  type: material
+  desc: Tingling slime that holds a charge.
+  vendor_value: 9
+
+Sirenum Scale:
+  type: material
+  desc: Iridescent scale from a sirenum.
+  vendor_value: 10
+
+Briny Flesh:
+  type: material
+  desc: Sea-bitter flesh.
+  vendor_value: 3
+
+Seraphelis Fang:
+  type: material
+  desc: Curved fang with venom grooves.
+  vendor_value: 11
+
+Seraphelis Scale:
+  type: material
+  desc: Pale aerodynamic scale.
+  vendor_value: 9
+
+Psionic Tendril:
+  type: material
+  desc: A quivering tendril severed from a Nyarleth.
+  vendor_value: 12
+
+Abyssal Ichor:
+  type: material
+  desc: Oily ichor that stains like night.
+  vendor_value: 11
+
+Glossy Scale:
+  type: material
+  desc: Dark iridescent scale.
+  vendor_value: 8
+
+Gem Shard:
+  type: material
+  desc: A glittering shard cracked from a cavern vein.
+  vendor_value: 14
+
+Caustic Gel:
+  type: material
+  desc: Fuming gel that etches leather.
+  vendor_value: 9
+
+Lumen Residue:
+  type: material
+  desc: Gently glowing dust.
+  vendor_value: 7
+
+Chiropteran Feather:
+  type: material
+  desc: Barbed feather from a winged anthropoid.
+  vendor_value: 6
+
+Thick Pelt:
+  type: material
+  desc: Dense fur suited to cold.
+  vendor_value: 9
+
+Wolfbear Claw:
+  type: material
+  desc: A heavy hooked claw.
+  vendor_value: 8
+
+Razor Feather:
+  type: material
+  desc: Knife-edged flight feather.
+  vendor_value: 7
+
+Hollow Bone:
+  type: material
+  desc: Light, resonant bone.
+  vendor_value: 6
+
+Night Plume:
+  type: material
+  desc: Down feather black as pitch.
+  vendor_value: 8
+
+Hooked Talon:
+  type: material
+  desc: Curved talon that bites deep.
+  vendor_value: 7
+
+Bloodied Tusk:
+  type: material
+  desc: A tusk still stained from battle.
+  vendor_value: 8
+
+Blood Vial:
+  type: material
+  desc: Vial filled with dragon-rich blood.
+  vendor_value: 20
+
+Dragon Scale:
+  type: material
+  desc: Broad red scale, hard as iron.
+  vendor_value: 22
+
+Shadow Essence:
+  type: material
+  desc: Condensed darkness that smokes in light.
+  vendor_value: 12
+
+Tattered Cowl:
+  type: material
+  desc: A hood that drinks torchglow.
+  vendor_value: 6
+
+Arcanite Core:
+  type: material
+  desc: A thrum of arc-light in crystal.
+  vendor_value: 13
+
+Cracked Focus:
+  type: material
+  desc: A spent charm of etched glass.
+  vendor_value: 7
+
+Nether Shard:
+  type: material
+  desc: A shard that hums with cold.
+  vendor_value: 12
+
+Warp Thread:
+  type: material
+  desc: Thread that slips from your fingertips.
+  vendor_value: 9
+
+Foraged Herbs:
+  type: material
+  desc: A bundle of wild greens and roots.
+  vendor_value: 5
+
+Worn Fetish:
+  type: material
+  desc: A small charm rubbed smooth by years.
+  vendor_value: 6
+
+Void Residue:
+  type: material
+  desc: A smear that refuses to reflect.
+  vendor_value: 10
+
+Wyld Herb Bundle:
+  type: material
+  desc: Aromatic bundle gathered in the wilds.
+  vendor_value: 6
+
+Leather Scraps:
+  type: material
+  desc: Usable offcuts of leather.
+  vendor_value: 4
+
+Etheric Shard:
+  type: material
+  desc: A clear shard that rings when struck.
+  vendor_value: 10
+
+Solinthar Charm:
+  type: material
+  desc: Braided fiber charm with leaf rune.
+  vendor_value: 9
+
+Ogre Tooth:
+  type: material
+  desc: A cracked molar the size of a thumb.
+  vendor_value: 11
+
+Orcish Fetish:
+  type: material
+  desc: A bone charm smeared with ochre.
+  vendor_value: 8
+
+Feather:
+  type: material
+  desc: A common feather from the riverlands.
+  vendor_value: 2
+
+Cat Pelt:
+  type: material
+  desc: Soft pelt from a prowling cat.
+  vendor_value: 7
+
+Cat Meat:
+  type: material
+  desc: Lean meat.
+  vendor_value: 2

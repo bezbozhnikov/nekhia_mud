@@ -1,0 +1,31 @@
+---
+topics:
+  basics: |
+    Movement:  go <dir>   (example: go east)
+    Look:      look       (alias: l)
+    Speak:     say <msg>
+    Who:       who
+    Stats:     stats
+    Target:    target <name>
+
+  combat: |
+    Attack:    attack <mob>
+    Abilities: abilities, use <ability> [target]
+    Combat lock: You cannot recall, rest, or quit safely for 10s after combat.
+
+  utility: |
+    Recall:    recall      (teleport to the Trade District; blocked in combat)
+    Rest:      rest        (sit still 60s to heal to full; interrupted by actions)
+    Inventory: inventory (inv), get <item>
+
+  social: |
+    Emote:     emote <text>
+    Tell:      tell <player> <message>
+
+  economy: |
+    Currency:  Obols
+    Shops:     shop, shop buy <item>, shop sell <item>
+
+  account: |
+    Login uses your name + password.
+    logout or quit will save and disconnect.

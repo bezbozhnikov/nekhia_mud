@@ -1,0 +1,24 @@
+Vorkhun:
+  mod: {hp: 10, power: 2}
+  racial: {name: Bloodoath, effect: {type: buff, amount: 2, duration: 10}}
+Hraventhi:
+  mod: {hp: 0, power: 0}
+  racial: {name: Natural Born Trader, effect: {type: buff, amount: 2, duration: 10}}
+Zalgorith:
+  mod: {hp: 20, power: 1, defense: 1}
+  racial: {name: Giantheart, effect: {type: shield, amount: 25}}
+Nymph:
+  mod: {hp: -5, power: 0}
+  racial: {name: Vitalist, effect: {type: hot, per_tick: 3, duration: 10}}
+Dryad:
+  mod: {hp: -5, power: 0}
+  racial: {name: Vitalist, effect: {type: hot, per_tick: 3, duration: 10}}
+Nereid:
+  mod: {hp: -5, power: 0}
+  racial: {name: Vitalist, effect: {type: hot, per_tick: 3, duration: 10}}
+Akhuzgal:
+  mod: {hp: 15, power: 0, defense: 1}
+  racial: {name: Ironskin, effect: {type: shield, amount: 15}}
+Zathyrkhon:
+  mod: {hp: 0, power: 2}
+  racial: {name: Horns, effect: {type: buff, amount: 2, duration: 10}}

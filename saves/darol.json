@@ -1,0 +1,24 @@
+{
+  "name": "darol",
+  "race": "Zathyrkhon",
+  "cls": "Venomheart",
+  "deity": "Zarkhothun",
+  "room": "azethria_inn",
+  "hp": 95,
+  "max_hp": 95,
+  "power": 15,
+  "defense": 0,
+  "shield": 0,
+  "level": 1,
+  "xp": 0,
+  "inventory": [],
+  "cooldowns": {},
+  "flags": {
+    "created": true,
+    "az_used": false
+  },
+  "quest": {
+    "id": "intro_cult_talisman",
+    "stage": 0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "test1",
+  "race": "Akhuzgal",
+  "cls": "Lifesage",
+  "deity": "Kav'Arcthul",
+  "room": "trade_district",
+  "hp": 115,
+  "max_hp": 115,
+  "power": 17,
+  "defense": 1,
+  "shield": 0,
+  "level": 1,
+  "xp": 160,
+  "inventory": [
+    "Longsword T1"
+  ],
+  "cooldowns": {},
+  "flags": {
+    "created": true,
+    "az_used": false,
+    "autoloot": true
+  },
+  "quest": null,
+  "equipment": {
+    "weapon": "Longsword T1",
+    "offhand": null,
+    "armor_set": null
+  },
+  "stats": {
+    "STR": 10,
+    "INT": 10,
+    "DEX": 10,
+    "DEF": 0,
+    "LCK": 10
+  },
+  "obols": 29,
+  "archetype": "Warrior"
+}

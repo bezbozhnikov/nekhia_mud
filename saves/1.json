@@ -1,0 +1,24 @@
+{
+  "name": "1",
+  "race": "Vorkhun",
+  "cls": "Barbarian Bloodberserk",
+  "deity": "Azethra",
+  "room": "nefo_akhal",
+  "hp": 120,
+  "max_hp": 120,
+  "power": 15,
+  "defense": 0,
+  "shield": 0,
+  "level": 1,
+  "xp": 10,
+  "inventory": [],
+  "cooldowns": {},
+  "flags": {
+    "created": true,
+    "az_used": false
+  },
+  "quest": {
+    "id": "intro_cult_talisman",
+    "stage": 1
+  }
+}

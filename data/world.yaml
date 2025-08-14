@@ -1,0 +1,385 @@
+---
+# Difficulty tiers (for reference only):
+# T1 = starter, T2 = tougher (mountains/caverns), T3 = dangerous wilds/ruins, T4 = abyssal/late
+
+rooms:
+  trade_district:
+    name: Trade District
+    desc: >
+      Bustling stalls, clatter of coins, and Tegyrios's wooden hut. The smell of
+      spiced tea and ink hangs in the air. City guards keep a lazy eye on the
+      gates to the west while caravans drift in and out.
+    exits:
+      east: tegyrios_hut
+      southeast: nefo_akhal
+      west: city_gates
+    nav:
+      west: City Gates
+      southeast: Nefo'Akhal Forest
+      east: Tegyrios’s Hut
+
+  tegyrios_hut:
+    name: Tegyrios’s Hut
+    desc: >
+      A self-made wooden home, walls lined with vellum scrolls. Tegyrios waits,
+      ready to speak of Nehemog and old unions.
+    exits:
+      west: trade_district
+    nav:
+      west: Trade District
+
+  city_gates:
+    name: City Gates of Azethria
+    desc: >
+      A broad arch of sandstone and ironwood. Beyond the gates, the road forks
+      into hills and rivers, with the mountains smoldering on the horizon.
+    exits:
+      east: trade_district
+      southwest: psychorafos_hills
+      northwest: megaombros_road
+    nav:
+      southwest: Psychorafos Hills
+      northwest: Road along the Megaombros
+
+  nefo_akhal:
+    name: Nefo'Akhal Forest
+    desc: >
+      Ancient trunks crowd the path. The Apate Stream runs poison-green under
+      the moonlight. Owls stir when you pass, and something else stirs back.
+    exits:
+      northwest: trade_district
+      southeast: forgotten_acacia
+      east: apate_stream_bank
+    nav:
+      northwest: Trade District
+      southeast: the Forgotten Acacia
+      east: Apate Stream
+    spawns: [moonwolf, poisonbat]  # T1
+
+  apate_stream_bank:
+    name: Bank of the Apate Stream
+    desc: >
+      Reeds hiss in a sickly breeze. The stream is a green ribbon; even insects
+      avoid its surface. Silver minnows flash beneath, then vanish.
+    exits:
+      west: nefo_akhal
+      south: ancient_oak
+    nav:
+      west: Nefo'Akhal Forest
+      south: Ancient Oak
+    spawns: [nictilucent, aqualisk]  # T2 (edge water threats)
+
+  forgotten_acacia:
+    name: Forgotten Acacia Tree
+    desc: >
+      Gnarled branches, carved sigils, and a hush that swallows footsteps.
+      Sometimes, chanting echoes here at night. The bark weeps a dark sap.
+    exits:
+      northwest: nefo_akhal
+      south: ancient_ruined_altar
+    nav:
+      northwest: Nefo'Akhal Forest
+      south: Ancient Ruined Altar
+    spawns: [nyktarian, nocturne]  # T2 night-terrors
+
+  ancient_oak:
+    name: Ancient Oak
+    desc: >
+      A titanic oak whose roots braid into the soil like petrified serpents.
+      Herbs grow thick here, if the guardians allow you near.
+    exits:
+      north: apate_stream_bank
+      southeast: waterdeep_grotto
+    nav:
+      north: Apate Stream
+      southeast: Waterdeep Grotto
+    spawns: [wyldling, wolfbear]  # T2 territorial
+
+  waterdeep_grotto:
+    name: Waterdeep Grotto
+    desc: >
+      A cool cavern whose ceiling sweats into a mirror-still pool. Ripples move
+      against the wind. The tunnel narrows east into darkness.
+    exits:
+      northwest: ancient_oak
+      east: dark_caverns_entrance
+    nav:
+      northwest: Ancient Oak
+      east: Dark Caverns
+    spawns: [nictilucent, nageel]  # T2 aquatic/ooze
+
+  dark_caverns_entrance:
+    name: Dark Caverns — Entrance
+    desc: >
+      The breath of the earth smells of wet stone and ore. Rails from an old
+      cart end at a collapsed shaft. Faint chittering echoes within.
+    exits:
+      west: waterdeep_grotto
+      down: dark_caverns_depths
+    nav:
+      west: Waterdeep Grotto
+      down: Caverns Depths
+    spawns: [giant_spider, venomweaver]  # T2/T3
+
+  dark_caverns_depths:
+    name: Dark Caverns — Gem Veins
+    desc: >
+      Glittering seams stripe the walls with red and blue fire. Your light calls
+      answers in the dark—too many. Tracks vanish beneath clawed prints.
+    exits:
+      up: dark_caverns_entrance
+    nav:
+      up: Caverns Entrance
+    spawns: [chiropteran, bloodboar, venomwyrm]  # T3
+
+  psychorafos_hills:
+    name: Psychorafos Hills
+    desc: >
+      Lone hills with winds that forget to stop. Stone markers from forgotten
+      clans jut like rotten teeth. The grass here hides quick things.
+    exits:
+      northeast: city_gates
+      north: megaombros_road
+      west: xyombros_ford
+    nav:
+      northeast: City Gates
+      north: Road along the Megaombros
+      west: Xyombros Ford
+    spawns: [bloodboar, wolfbear, wild_dog]  # T1/T2 mix
+
+  megaombros_road:
+    name: Road by the Megaombros
+    desc: >
+      The river keeps pace with the road, wide and muscled. Driftwood turns in
+      slow eddies. Fisher shrines watch travelers in silence.
+    exits:
+      southeast: city_gates
+      north: nykhthul_foothills
+    nav:
+      southeast: City Gates
+      north: Foothills of Nykhthul
+    spawns: [wild_rabbit, black_fox, wild_bird]  # critters T1
+
+  nykhthul_foothills:
+    name: Nykhthul Foothills (Red Mountains)
+    desc: >
+      The earth reddens and lifts. Iron-rich dust clings to boots. Sound carries
+      oddly here; distant clatters arrive like whispers.
+    exits:
+      south: megaombros_road
+      north: nykhthul_pass
+    nav:
+      south: Road by the Megaombros
+      north: Nykhthul Pass
+    spawns: [bloodboar, wolfbear]  # T2
+
+  nykhthul_pass:
+    name: Nykhthul Mountains — Pass
+    desc: >
+      A knife of a path over cliff and scree. Red faces of stone glare with
+      sunset light. Far peaks glow like coals.
+    exits:
+      south: nykhthul_foothills
+      north: orkhmoln_dale
+      east: dark_caverns_entrance
+      north_east: tyristhul_foothills   # optional extra route if you like; remove if not desired
+    nav:
+      south: Foothills
+      north: Orkhmoln Dale
+      east: Dark Caverns
+    spawns: [pteranodax, ogthar, gor_khun]  # T2/T3
+
+  orkhmoln_dale:
+    name: Orkhmoln Dale
+    desc: >
+      A high valley hidden beyond the pass—wet grass, loud streams, and
+      untouched woods. You feel watched, but not by anything that breathes fast.
+    exits:
+      south: nykhthul_pass
+      west: thrymkeim
+    nav:
+      south: Nykhthul Pass
+      west: Thrymkeim Camp
+    spawns: [solinthar, etherid, wyldling]  # mostly passive/neutral sentients T2
+
+  thrymkeim:
+    name: Thrymkeim Guard Camp
+    desc: >
+      Hraventhi standards ripple above rebuilt stone. A watchfire pools light
+      on old foundations—ruins of something nobody remembers, loudly.
+    exits:
+      east: orkhmoln_dale
+      south: xyombros_ford
+    nav:
+      east: Orkhmoln Dale
+      south: Xyombros Ford
+    spawns: []  # safe hub (could add vendors later)
+
+  xyombros_ford:
+    name: Xyombros Ford
+    desc: >
+      The river braids into shallow tongues over flat shale. Wagon tracks vanish
+      into the water and return a little downstream.
+    exits:
+      east: psychorafos_hills
+      north: thrymkeim
+      south: xambria_vale
+    nav:
+      east: Psychorafos Hills
+      north: Thrymkeim
+      south: Xambria Vale
+    spawns: [aqualisk, nageel]  # water T2
+
+  xambria_vale:
+    name: Xambria Vale
+    desc: >
+      A bright valley between lake and river. The air tastes of rain and salt,
+      and gulls patrol the sky like bored kings.
+    exits:
+      north: xyombros_ford
+      south: qtymbria_keep
+      east: bisqanith_lake
+    nav:
+      north: Xyombros Ford
+      south: Qtymbria
+      east: Lake Bis’Qanith
+    spawns: [wild_bird, deer, boar]  # critters T1
+
+  bisqanith_lake:
+    name: Lake Bis’Qanith
+    desc: >
+      A cold mirror that swallows clouds whole. Fishing lines hang like prayers.
+      Something tugs from below, too steadily to be a fish.
+    exits:
+      west: xambria_vale
+      south: bisombros_drift
+    nav:
+      west: Xambria Vale
+      south: Bisombros River
+    spawns: [sirenum, aqualisk]  # T2/T3
+
+  bisombros_drift:
+    name: Bisombros River Drift
+    desc: >
+      The small river murmurs toward the southern sea. Reeds hide nests and
+      bones in equal measure.
+    exits:
+      north: bisqanith_lake
+      south: qhythria_fortress
+    nav:
+      north: Lake Bis’Qanith
+      south: Qhythria Fortress
+    spawns: [sirenum, nageel]  # T2
+
+  qhythria_fortress:
+    name: Qhythria Fortress
+    desc: >
+      Granite walls gaze over the southern waters. Wind wires hiss through
+      arrow slits, singing a warning to the channel to the east.
+    exits:
+      north: bisombros_drift
+      east: qhyygath_channel
+    nav:
+      north: Bisombros River
+      east: Qhyygath Channel
+    spawns: []  # safe
+
+  qhyygath_channel:
+    name: Qhyygath Channel
+    desc: >
+      A narrow throat where the Blue Abyss meets the Dark. Currents snarl in
+      silence. Sailors swear they’ve seen eyes beneath the foam.
+    exits:
+      west: qhythria_fortress
+      east: scythrea_shore
+    nav:
+      west: Qhythria
+      east: Scythrea
+    spawns: [nyarleth]  # rare T4 psionic sea horror
+
+  scythrea_shore:
+    name: Scythrea Shore
+    desc: >
+      Eroded cliffs and powder-fine sand that sparkles at night. The ruins ahead
+      keep their secrets with the tide’s help.
+    exits:
+      west: qhyygath_channel
+      east: jhethira_ruins
+    nav:
+      west: Qhyygath Channel
+      east: Jhethira Ruins
+    spawns: [nocturne, nyktarian]  # T2/T3
+
+  jhethira_ruins:
+    name: Jhethira — Ruined Town
+    desc: >
+      Broken streets swallowed by beach grass. Doorways open onto nothing but
+      sky. Statues hold tablets that cannot be read anymore.
+    exits:
+      west: scythrea_shore
+      north: ancient_ruined_temple
+    nav:
+      west: Scythrea Shore
+      north: Ancient Ruined Temple
+    spawns: [shadowkin, netherling, arcanite]  # T3/T4
+
+  ancient_ruined_altar:
+    name: Ancient Ruined Altar
+    desc: >
+      A cracked plinth, sigils ground into dust. The air thins; whispers collect
+      in the bowl of the altar as if it were a throat.
+    exits:
+      north: forgotten_acacia
+      east: ancient_ruined_temple
+    nav:
+      north: Forgotten Acacia
+      east: Ancient Temple
+    spawns: [shadowkin, voidborn]  # T3
+
+  ancient_ruined_temple:
+    name: Ancient Ruined Temple
+    desc: >
+      The nave is open to stars that don’t line up right. Black ivy stitches
+      the arches together. Footsteps echo ahead of you.
+    exits:
+      south: ancient_ruined_altar
+      east: alghabakh_tur
+    nav:
+      south: Ancient Altar
+      east: Alghabakh Tur
+    spawns: [shadowkin, netherling, arcanite, voidborn]  # T4
+
+  alghabakh_tur:
+    name: Alghabakh Tur (Black Obelisk Watch)
+    desc: >
+      A Hraventhi tower watching the black obelisk near the rim of Zuh'Umra'Geth.
+      The sea mutters at the base of the cliffs, and the obelisk drinks the starlight.
+    exits:
+      west: ancient_ruined_temple
+      east: zuh_umra_geth_rim
+    nav:
+      west: Ancient Temple
+      east: Rim of the Dark Abyss
+    spawns: []  # guarded/safe
+
+  zuh_umra_geth_rim:
+    name: Rim of Zuh'Umra'Geth (Dark Abyss)
+    desc: >
+      The eastern horizon is a black scythe of sea. Stories end here—some with
+      triumph, most without. The wind carries a taste of iron.
+    exits:
+      west: alghabakh_tur
+    nav:
+      west: Alghabakh Tur
+    spawns: [blooddragon]  # rare T4 apex
+
+  tyristhul_foothills:
+    name: Tyristhul Foothills
+    desc: >
+      The air needles the lungs; frost laces the grass. Peaks knit a gray wall
+      to the north. Somewhere up there, the Highest Peak waits.
+    exits:
+      south: nykhthul_pass
+    nav:
+      south: Nykhthul Pass
+    spawns: [wolfbear]  # T2 cold variant
